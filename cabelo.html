@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Corte</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Barbearia do Fulano</h1>
+         <img src="logo1.jpg" alt="LogodaBarbearia" class="Logo">
+         <h1>Faça o Login ou se Cadastre para agendar um corte</h1>
+    </header>
+
+    <main>
+        <article>
+            <input type="text" id="usuario" name="usuario" placeholder="Usuário"><br><br>
+            <input type="password" id="senha" name="senha" placeholder="Senha"><br><br>
+                <a href="PaginaOpções/opções.html">
+                <button class="botaoteste">Login</button>
+                </a></p>
+                    <a href="PaginaCadastro/cadastro.html">
+                    <button class="botaoteste">Cadastrar-se</button>
+                    </a>
+        </article>
+    </main>
+
+    <footer>
+        <p>Criado por Luiz Gustavo Mendes Xavier &copy; 2025</p>
+    </footer>
+
+<script>
+document.querySelector(".botaoteste").addEventListener("click", function(event) {
+  const usuario = document.getElementById("usuario").value.trim();
+  const senha = document.getElementById("senha").value.trim();
+
+  if (usuario === "" || senha === "") {
+    event.preventDefault();
+    alert("Preencha o usuário e a senha antes de continuar.");
+  } else {
+    alert("Login realizado com sucesso!");  
+  }
+});
+</script>
+
+</body>
+</html>
