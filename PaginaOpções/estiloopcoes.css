@@ -8,6 +8,26 @@ body {
     overflow-x: hidden; 
 }
 
+a {
+    text-decoration: none;
+}
+
+.botao-voltar {
+  background-color: #161616;
+  color: #fff;
+  display: flex;
+  font-size: 18px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.botao-voltar:hover {
+    transform: translateY(-5px);
+}
+
 header {
     background-color: #161616;
     color: #fff;
@@ -49,6 +69,7 @@ footer {
 }
 
 .botoes {
+  text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;

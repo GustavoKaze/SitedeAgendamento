@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #161616;
+}
+
+.container {
+    background-color: #252525;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #ffffff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #0dff59;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Estilo para status - ajuda visual */
+.status-confirmado {
+    color: white;
+    background-color: #28a745; /* Verde */
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.status-pendente {
+    color: #333;
+    background-color: #ffc107; /* Amarelo */
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+#mensagem-carregamento {
+    
+    color: white; 
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+}

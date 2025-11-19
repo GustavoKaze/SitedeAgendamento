@@ -17,4 +17,6 @@ document.querySelector(".botaoteste").addEventListener("click", function(event) 
 
   alert("Cadastro realizado com sucesso!");
   this.reset();
+
+  window.location.href = "../cabelo.html";
 });

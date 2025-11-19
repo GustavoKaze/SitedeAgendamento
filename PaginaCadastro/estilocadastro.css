@@ -5,7 +5,32 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; 
+    overflow-x: hidden;
+}
+
+article {
+    text-align: center;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.botao-voltar {
+    background-color: #161616;
+    color: #fff;
+    display: flex;
+    font-size: 24px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.botao-voltar:hover {
+    transform: translateY(-5px);
 }
 
 header {
@@ -21,11 +46,11 @@ header h1 {
 }
 
 main {
-    max-width: 400px;
+    max-width: 770px;
     margin: 20px auto;
     padding: 20px;
     background-color: #252525;
-    border-radius: 20px; 
+    border-radius: 20px;
     color: #fff;
     box-shadow: 0 0 10px rgba(206, 201, 201, 0.1);
     text-align: center;
@@ -34,7 +59,7 @@ main {
 .Logo {
     width: 200px;
     height: auto;
-    border: 5px solid #ffffff;  
+    border: 5px solid #ffffff;
     border-radius: 50px;
 }
 
@@ -48,31 +73,73 @@ footer {
     width: 100%;
 }
 
+.botoes {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+
 .botaoteste {
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  padding: 20px 50px;
-  border: none; 
-  border-radius: 20px;
-  cursor: pointer; 
-  transition: background-color 0.3s;
-  font-size: 20px;
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #4a4a4a;
+    font-size: 18px;
+    font-weight: 500;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 .botaoteste:hover {
-  background-color: #45a049;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+.botaoteste img {
+    width: 60px;
+    height: 60px;
+}
+
+.botaoteste span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
 }
 
 input {
-  padding: 25px;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  width: 300px;
-  font-size: 20px;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 300px;
+    font-size: 20px;
 }
 
 input:focus {
-  border-color: #4CAF50;
-  outline: none;
+    border-color: #4CAF50;
+    outline: none;
 }
 
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+button img {
+    width: 24px;
+    height: 24px;
+}
