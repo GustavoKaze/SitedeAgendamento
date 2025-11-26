@@ -3,32 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel do Barbeiro - Cortes Agendados</title>
-    <link rel="stylesheet" href="estiloadmin.css"> 
+    <title>Painel Admin - Davi Carmo</title>
+    <link rel="stylesheet" href="estiloadmin.css">
 </head>
 <body>
+    <header>
+        <button class="botao-voltar" onclick="window.location.href='../logout.php'">Sair</button>        
+        <h1>Painel do Barbeiro</h1>
+        <img src="../logo1.jpg" alt="Logo" class="Logo">
+        <h2>Agenda de Cortes</h2>
+    </header>
 
-    <div class="container">
-        <h1>Agenda de Cortes</h1>
+    <main>
+        <div id="lista-admin" class="container-lista">
+            <p class="carregando">Carregando agendamentos...</p>
+        </div>
+    </main>
 
-        <table id="tabela-agendamentos">
-            <thead>
-                <tr>
-                    <th>Cliente</th>
-                    <th>Serviço Solicitado</th>
-                    <th>Data</th>
-                    <th>Hora</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                </tbody>
-        </table>
-
-        <p id="mensagem-carregamento">Carregando agendamentos...</p>
-    </div>
-
-    <script src="dados_admin.js"></script>
-
+    <script src="admin.js"></script>
 </body>
 </html>

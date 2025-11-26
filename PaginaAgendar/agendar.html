@@ -9,35 +9,23 @@
 <body>
     <header>
         <button class="botao-voltar" onclick="history.back()">Voltar</button>
-        <h1>Barbearia do Fulano</h1>
-         <img src="logo1.png" alt="LogodaBarbearia" class="Logo">
-         <h1>Lista</h1>
+        <h1>Davi Carmo Barber</h1>
+        <img src="logo1.jpg" alt="Logo da Barbearia" class="Logo">
     </header>
 
 <main>
-    <section class="lista-horarios">
+    <h2>Agendamento</h2>
+    <section class="painel-agendamento">
+        <label for="dataAgendamento" style="display:block; margin-bottom:10px; color:#ccc;">Escolha o dia:</label>
         
-        <div class="horario">
-            <p>Segunda - 14:00</p>
-            <button class="btn-agendar">Agendar</button>
-        </div>
+        <input type="date" id="dataAgendamento" class="input-data">
 
-        <div class="horario">
-            <p>Segunda - 15:00</p>
-            <button class="btn-agendar">Agendar</button>
-        </div>
+        <hr style="border-color: #444; margin: 20px 0;">
 
-        <div class="horario">
-            <p>Terça - 09:00</p>
-            <button class="btn-agendar">Agendar</button>
+        <h3>Horários Disponíveis</h3>
+        <div id="listaHorarios" class="lista-horarios">
+            <p class="aviso-selecione">Selecione uma data acima para ver os horários.</p>
         </div>
-
-        <div class="horario">
-            <p>Terça - 10:00</p>
-            <button class="btn-agendar">Agendar</button>
-        </div>
-
-        <!-- O backend só vai trocar/gerar esses blocos depois -->
     </section>
 </main>
 
@@ -48,4 +36,3 @@
 <script src="agendamentos.js"></script>
 </body>
 </html>
-

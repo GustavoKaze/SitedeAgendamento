@@ -3,46 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agende seu corte</title>
+    <title>Meus Agendamentos</title>
     <link rel="stylesheet" href="agendamentosestilo.css">
 </head>
 
 <body>
     <header>
-        <button class="botao-voltar" onclick="history.back()">Voltar</button>
-        <h1>Barbearia do Fulano</h1>
-         <img src="logo1.png" alt="LogodaBarbearia" class="Logo">
-         <h1>Lista</h1>
+        <button class="botao-voltar" onclick="window.location.href='../PaginaOpcoes/opcoes.html'">Voltar</button>
+        
+        <h1>Davi Carmo Barber</h1>
+        <img src="../logo1.jpg" alt="Logo da Barbearia" class="Logo">
+        <h2>Meus Horários</h2>
     </header>
 
     <main>
-    <section class="lista-agendamentos">
+        <section id="container-lista" class="lista-agendamentos">
+            <p style="text-align:center; color:#888;">Carregando agendamentos...</p>
+        </section>
+    </main>
 
-        <div class="agendamento">
-            <div class="info">
-                <h3>Corte masculino</h3>
-                <p>Data: 20/02/2025</p>
-                <p>Horário: 14:00</p>
-            </div>
-            <button class="btn-cancelar">Cancelar</button>
-        </div>
+    <footer>
+        <p>Criado por Luiz Gustavo Mendes Xavier &copy; 2025</p>
+    </footer>
 
-        <div class="agendamento">
-            <div class="info">
-                <h3>Barba completa</h3>
-                <p>Data: 22/02/2025</p>
-                <p>Horário: 09:30</p>
-            </div>
-            <button class="btn-cancelar">Cancelar</button>
-        </div>
-
-    </section>
-</main>
-
-<footer>
-    <p>Criado por Luiz Gustavo Mendes Xavier &copy; 2025</p>
-</footer>
-
-<script src="meus_agendamentos.js"></script>
+    <script src="meus_agendamentos.js"></script>
 </body>
 </html>
